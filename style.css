@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+/* Define the fade-up animation */
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-up animation to both sections */
+.animate-fade-up {
+    animation: fade-up 2s ease;
+}
+
+@media (max-width: 768px) {
+    .grid-cols-1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cols-3 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.tabs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tab-label {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #333;
+        color: #fff;
+        transition: background-color 0.3s;
+    }
+    
+    .tab-label:hover {
+        background-color: #555;
+    }
+    
+    .tab-content {
+        display: none;
+        width: 100%;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    
+    input[type="radio"] {
+        display: none;
+    }
+    
+    input[type="radio"]:checked + label {
+        background-color: #555;
+    }
+    
+    input[type="radio"]:checked ~ .tab-content {
+        display: block;
+    }
+
+    /* Place the tab content to the right for md and lg screens */
+    @media (min-width: 768px) {
+        .lg:flex {
+            flex-direction: row-reverse;
+        }
+
+        .lg:-mx-12 {
+            margin-right: -3rem; /* Adjust as needed */
+        }
+
+        .flex-1 {
+            width: 50%;
+        }
+    }

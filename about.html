@@ -3,45 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <title>About</title>
+    <title>Portfolio Website</title>
 </head>
 <body>
-    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-  </a>
-  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-  </div>
-  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-      <li>
-        <a href="about.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">About</a>
-      </li>
-      <li>
-        <a href="portfolio.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Portfolio</a>
-      </li>
-      <li>
-        <a href="services.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-      </li>
-      <li>
-        <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-      </li>
+ 
+<!-- About Section -->
+<section id="about-section" class="bg-black animate-fade-up">
+    <div class="container px-8 py-12 mx-auto fade-in">
+        <br><br>
+        <h1 class="text-3xl font-semibold text-red-600 lg:text-5xl">About</h1>
+       
+
+<div class="mb-5 border-b border-gray-200 dark:border-gray-700">
+    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="Who am I-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Who am i?</button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="Career" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="career" aria-selected="false">Career</button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="Education" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="education" aria-selected="false">Education</button>
+        </li>
+        <li role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="Certifications" data-tabs-target="#styled-contacts" type="button" role="tab" aria-controls="certifications" aria-selected="false">Certifications</button>
+        </li>
+        <li role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="Skills" data-tabs-target="#styled-skills" type="button" role="tab" aria-controls="skills" aria-selected="false">Skills</button>
+        </li>
     </ul>
-  </div>
-  </div>
-</nav>
+</div>
+
+<!--Who am i tab content-->
+<div id="default-styled-tab-content">
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
+        <p class="text-xl text-white">In a world where pixels sway to the melody of innovation, where lines of code lay the foundation for dreams, there emerges a figure. A figure of multifaceted talents, embodying the roles of Web Developer, Creative, Customer Support Specialist, Email Marketer &amp; Developer, and even that of a pitmaster. This is not just any individual; this is a tale of passion, ambition, and the relentless pursuit of excellence. His passion knows no bounds as he weaves intricate UI interfaces, sculpting digital landscapes with the finesse of a master artist. But his quest extends far beyond mere lines of code; it is a quest to make a lasting impact in the ever-evolving landscape of software development and customer facing roles. Always eager to collaborate on exciting projects, his journey takes them to the far reaches of innovation. Whether it's shaping innovative dashboards, refining design systems, or crafting compelling landing pages, he stands ready to leave his mark on the digital canvas. But he is not defined by code alone. He is also a self-taught chef, wielding a spatula and keyboard with equal prowess. With culinary creativity as his secret weapon, he embarks on a quest to change the world—one line of code and one delicious meal at a time.</p>
+    </div>
+
+<!--Career tab content-->
+    <div class="hidden p-4 rounded-lg" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <p class="text-xl text-white">Choosing a career is like choosing a movie on Netflix. You spend ages browsing, end up picking one randomly, and halfway through, you're questioning all your life choices."</p>
+            <br><br>
+    <div class="flex flex-wrap justify-between gap-4">
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+    </div>
+</div>
+
+<!--Education tab content-->
+    <div class="hidden p-4 rounded-lg" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
+        <div class="flex flex-wrap justify-between gap-4">
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+    </div>
+    </div>
+<!--Certifications tab content-->
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="certifications-tab">
+        <p class="text-xl text-white">Below are some of the certifications i have aquired on my search for knowledge</p>
+      <br><br>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="Images/Certifications/Responsive Web Design Freecodecamp.png" alt="Responsive Web Design certificate">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="Images/Certifications/My Great Learning - FRONT-END DEVELOPMENT CRASH COURSE.png" alt="FRONT-END DEVELOPMENT CRASH COURSE certificate">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="Images/Certifications/Meta Introduction to Front-end Development.png" alt="Introduction to Front-end Development certificate">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="Images/Certifications/Introduction to Machine Learning US.jpg" alt="Introduction to Machine Learning US certificate">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="Images/Certifications/Hubspot service Hub.png" alt="Hubspot service Hub certificate">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="Images/Certifications/Hubspot Email marketing.png" alt="Hubspot Email marketing certificate">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="Images/Certifications/AWS - Jobs in the cloud.jpg" alt="AWS - Jobs in the cloud certificate">
+    </div>   
+</div>
+      </div>
+
+<!--Skills tab content-->
+<div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-skills" role="tabpanel" aria-labelledby="skills-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">skills tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+</div>
+    </div>
+</section>
+       
+
+<!-- Portfolio section -->
+<section id="portfolio-section" class="bg-black rtl animate-fade-up">
+    <div class="container px-6 py-12 mx-auto">
+        <br><br><br>
+        <h1 class="text-3xl font-semibold text-red-600 lg:text-5xl text-right">Portfolio</h1>
+
+        <div class="mt-8 xl:mt-16 lg:flex lg:-mx-12 flex-row-reverse">
+            <div class="lg:mx-12">
+                <h1 class="text-xl font-semibold text-white dark:text-white text-right">Table of Content</h1>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Portfolio section -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
