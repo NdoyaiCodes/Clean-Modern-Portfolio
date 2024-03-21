@@ -7,6 +7,43 @@ body{
     background-color: black;
 }
 
+h2{
+    font-size: 18px;
+}
+
+.spotify-container {
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+
+}
+/* Default styling */
+.spotify-container iframe {
+    border-radius: 20px;
+    max-width: calc(100% - 40px);
+    height: 350px;
+}
+
+/* For large screens */
+@media (min-width: 1024px) {
+    .spotify-container iframe {
+        width: 60%;
+    }
+}
+
+/* For small screens */
+@media (max-width: 767px) {
+    .spotify-container iframe {
+        width: 100%;
+    }
+}
+
+
+#about-section {
+    min-height: 50vh;
+    margin-top: -200px;
+}
+
 /* Define the fade-up animation */
 @keyframes fade-up {
     from {
@@ -94,3 +131,40 @@ body{
             width: 50%;
         }
     }
+
+ 
+.glassmorphism-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glassmorphism-item img {
+  max-width: 30%;
+  height: auto;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon-item img {
+    max-width: 100%;
+    height: auto;
+    width: 100px; /* Adjust size as needed */
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.star {
+    color: #FFD700; /* Gold color */
+    font-size: 20px;
+    margin-right: 3px;
+}
