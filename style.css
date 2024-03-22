@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: black;
+    background-image: linear-gradient(to left top, #282828, #24242c, #1e202f, #151c33, #051937);
 }
 
 h2{
@@ -12,7 +12,7 @@ h2{
 }
 
 .spotify-container {
-    padding: 0 40px;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
 
@@ -38,10 +38,17 @@ h2{
     }
 }
 
-
 #about-section {
     min-height: 50vh;
     margin-top: -200px;
+}
+
+h1, p {
+    font-family: 'Courier New', monospace;
+}
+
+h1 {
+    font-weight: 800;
 }
 
 /* Define the fade-up animation */
@@ -132,29 +139,52 @@ h2{
         }
     }
 
- 
-.glassmorphism-item {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@keyframes crawl {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
-.glassmorphism-item img {
-  max-width: 30%;
-  height: auto;
+.block {
+    text-align: center;
+}
+
+.experience-list {
+    padding-left: 20px;
+}
+
+.experience-list li {
+    margin-bottom: 15px;
+}
+
+
+.experience-icon {
+    margin: 0 auto;
 }
 
 .icon-item {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.Professional icon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+
+
 .icon-item img {
-    max-width: 100%;
+    width: 50px; /* Set the width of all icons */
+    text-align: center;
     height: auto;
-    width: 100px; /* Adjust size as needed */
 }
 
 .star-rating {
