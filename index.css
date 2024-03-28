@@ -56,7 +56,7 @@ body {
 
 .logo {
     height: auto;
-    max-width: 200px; /* Adjust the maximum width as needed */
+    max-width: 200px;
 }
 
 .container .content {
@@ -151,27 +151,27 @@ body {
     }
 
     .header {
-        justify-content: center; /* Center the content horizontally */
-        padding-left: 130px;
+        justify-content: center;
+        padding-left: 90px;
     }
 
     .logo {
-        max-width: 60%; /* Adjust the maximum width for mobile */
+        max-width: 70%;
     }
 
     .container .content h1 {
         font-size: 2rem;
         margin-top: 1rem;
-        margin-bottom: 1rem; /* Adjusted margin for mobile */
+        margin-bottom: 1rem;
     }
     .container .content h2 {
         font-size: 1.5rem;
-        margin-bottom: 2rem; /* Adjusted margin for mobile */
+        margin-bottom: 2rem;
     }
     .container .content nav a {
         font-size: 1rem;
-        padding: 0.5rem; /* Adjusted padding for mobile */
-        margin: .8rem; /* Adjusted margin for mobile */
+        padding: 0.5rem;
+        margin: .8rem;
         justify-content:space-between;
     }
 
@@ -179,11 +179,11 @@ body {
         justify-content: center;
         align-items: center;
         margin-top: 2rem;
-        margin-right: 0; /* Removed right margin for mobile */
+        margin-right: 0;
     }
     .container .social a i {
         font-size: 2rem;
-        margin: 2rem; /* Adjusted margin for mobile */
+        margin: 2rem;
         justify-content:space-between;
     }
 }
