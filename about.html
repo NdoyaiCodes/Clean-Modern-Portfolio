@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
 </head>
 <body>
-
-  <h2 class="spotify-text text-lg text-center text-purple-500 mt-12 animate-fade-up">Play, Listen and Enjoy! Curated specially for you</h2>
-  <br>
-  <h3 class="text-sm text-center text-purple-500 animate-fade-up">"Without music, life would be a mistake."<br> - Friedrich Nietzsche</h3>
-
-  <div class="spotify-container mt-6 mb-4 animate-fade-up">
-    <iframe src="https://open.spotify.com/embed/playlist/5ebTgsUwdrxIrfp75KtwxI?utm_source=generator&theme=0" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-
+  <!-- Spotify Section -->
+  <div class="spotify-section" id="spotify-section">
+    <h2 id="spotify" class="spotify-text text-lg text-center text-white mt-12 animate-fade-up">Play, Listen and Enjoy! Curated specially for you</h2>
+    <br>
+    <h3 class="text-sm text-center text-white animate-fade-up">"Without music, life would be a mistake."<br> - Friedrich Nietzsche</h3>
+    <div class="spotify-container mt-6 mb-4 animate-fade-up">
+      <iframe src="https://open.spotify.com/embed/playlist/5ebTgsUwdrxIrfp75KtwxI?utm_source=generator&theme=0" frameborder="0" allowfullscreen title="Spotify Playlist"></iframe>
+    </div>
+  </div>
 <!-- About Section -->
-<section id="about-section" class=" animate-fade-up">
+<section id="about-section" class="animate-fade-up">
     <div class="container px-8 py-12 mx-auto fade-in">
-        <h1 class="text-5xl font-semibold text-purple-600 lg:text-6xl">About</h1>
-       
+        <h1 class="text-5xl font-semibold text-purple-600 lg:text-6xl">About</h1>      
 <br><br>
 <div class="mb-5 border-b border-gray-200 dark:border-gray-700">
     <ul class="flex flex-wrap -mb-px text-lg font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
@@ -43,19 +43,18 @@
         </li>
     </ul>
 </div>
-
 <!--Who am i tab content-->
 <div id="default-styled-tab-content">
-    <div class="hidden p-4 rounded-lg" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
-        <p class="text-white text-xl">"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment." - Ralph Waldo Emerson.</p>
-        <br><br>
-        <p class="text-white text-2xl">In a world where pixels sway to the melody of innovation, where lines of code lay the foundation for dreams, there emerges a figure. A figure of multifaceted talents, embodying the roles of <span class="text-purple-500"> Web Developer, Creative, Customer Support Specialist, Email Marketer &amp; Developer</span>, and even that of a <span class="text-purple-500">pitmaster.</span> This is not just any individual; this is a tale of passion, ambition, and the relentless pursuit of excellence. His passion knows no bounds as he weaves intricate UI interfaces, sculpting digital landscapes with the finesse of a master artist. But his quest extends far beyond mere lines of code; it is a quest to make a lasting impact in the ever-evolving landscape of software development and customer facing roles. Always eager to collaborate on exciting projects, his journey takes them to the far reaches of innovation. Whether it's shaping innovative dashboards, refining design systems, or crafting compelling landing pages, he stands ready to leave his mark on the digital canvas. But he is not defined by code alone. He is also a self-taught chef, wielding a spatula and keyboard with equal prowess. With culinary creativity as his secret weapon, he embarks on a quest to change the world—one line of code and one delicious meal at a time.</p>
+    <div class="hidden p-4 rounded-lg flex" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div>
+            <p class="text-one text-white text-xl md:mb-8">"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment." - Ralph Waldo Emerson.</p>
+            <p class="text-white text-2xl">In a world where innovation thrives and creativity reigns, I'm a Web Developer, Creative, and Customer Support Specialist on a mission to transform digital landscapes. My passion lies in sculpting user-centric experiences that captivate and inspire. From crafting sleek user interfaces to architecting seamless workflows, I thrive on pushing the boundaries of innovation. Whether I'm coding, designing, or cooking up a storm in the kitchen, I bring boundless creativity and relentless dedication to everything I do. Let's collaborate and make magic happen!</p>
+        </div>
     </div>
-
-
+</div>
 <!--Career tab content-->
     <div class="hidden p-4 rounded-lg" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-            <p class="text-2xl text-white">"Choosing a career is like choosing a movie on Netflix. You spend ages browsing, end up picking one randomly, and halfway through, you're questioning all your life choices." - anonymous</p>
+            <p class="text-2xl styled-dashboard-mobile-border text-white">"Choosing a career is like choosing a movie on Netflix. You spend ages browsing, end up picking one randomly, and halfway through, you're questioning all your life choices." - anonymous</p>
             <br><br>
     <div class="flex flex-wrap justify-between gap-4">
         <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
@@ -107,10 +106,9 @@
         </div>
     </div>
 </div>
-
 <!-- Education tab content -->
 <div class="hidden p-4 rounded-lg" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
-    <p class="text-white text-2xl">"Education is the passport to the future, for tomorrow belongs to those who prepare for it today." - Malcolm X.</p>
+    <p class="text-white styled-dashboard-mobile-border text-2xl">"Education is the passport to the future, for tomorrow belongs to those who prepare for it today." - Malcolm X.</p>
         <br><br>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
@@ -124,12 +122,19 @@
             <div class="p-6">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">CodeCademy</h5>
                 <p class="font-normal text-gray-700 dark:text-gray-400">Full-Stack Development Bootcamp</p>
-                <p class="text-white">2023 - Present</p>
+                <p class="text-white">2023 - present</p>
             </div>
         </div>
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <div class="p-6">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white"> FreeCodeCamp</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">MetaSchool.io</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Web3</p>
+                <p class="text-white">2024 - present</p>
+            </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <div class="p-6">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">FreeCodeCamp</h5>
                 <p class="font-normal text-gray-700 dark:text-gray-400">Responsive Web Design</p>
                 <p class="text-white">2023</p>
             </div>
@@ -142,12 +147,9 @@
         </div>
     </div>
 </div>
-
-
-
 <!--Certifications tab content-->
     <div class="hidden p-4 rounded-lg" id="styled-contacts" role="tabpanel" aria-labelledby="certifications-tab">
-        <p class="text-2xl text-white">"Certifications are the keys that unlock doors to new opportunities and career advancement." - Unknown</p>
+        <p class="text-2xl styled-dashboard-mobile-border text-white">"Certifications are the keys that unlock doors to new opportunities and career advancement." - Unknown</p>
       <br><br>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
     <div>
@@ -170,13 +172,15 @@
     </div>
     <div>
         <img class="h-auto max-w-full rounded-lg" src="Images/Certifications/AWS - Jobs in the cloud.jpg" alt="AWS - Jobs in the cloud certificate">
-    </div>   
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="Images/Certifications/Meta School.jpg" alt="Meta School - writing my frst solidity contract">
+    </div>
 </div>
       </div>
-
 <!--Skills tab content-->
     <div class="hidden p-4 rounded-lg" id="styled-skills" role="tabpanel" aria-labelledby="skills-tab">
-        <p class="text-2xl text-white">"The only source of knowledge is experience." - Albert Einstein</p>
+        <p class="text-2xl styled-dashboard-mobile-border text-white">"The only source of knowledge is experience." - Albert Einstein</p>
         <br><br>
          <!-- Professional Skills section -->
     <div class="mb-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -184,33 +188,27 @@
         <div class="Professional icon">
             <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">Landing Page Design</div>
         </div>
-
         <!-- Professional Skill 2 -->
         <div class="Professional icon">
             <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">Email Marketing</div>
         </div>
-
         <!-- Professional Skill 3 -->
         <div class="Professional icon">
             <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">Web Development</div>
         </div>
-
         <!-- Professional Skill 4 -->
         <div class="Professional icon">
             <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">Hubspot Service &amp; Email</div>
         </div>
-
         <!-- Professional Skill 5 -->
         <div class="Professional icon">
             <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">No-Code Design</div>
         </div>
-
         <!-- Professional Skill 6 -->
         <div class="Professional icon">
             <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">User Interface Design</div>
         </div>
-    </div>
-
+            </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div class="icon-item">
                 <img src="Images/skill icons/001-html-5.png" alt="HTML 5">
@@ -300,9 +298,7 @@
         </div>
     </div>
 </div>
-</div>
 </section>
-
 <!-- Portfolio section -->
 <section id="portfolio-section" class=" rtl animate-fade-up">
     <div class="container px-6 py-9 mx-auto">
@@ -313,73 +309,58 @@
             <div class="lg:mx-12">
             <section>
                 <div class="text-center p-8">
-                    <p class="sm:text-xl md:text-2xl lg:text-2xl text-white">Welcome to my Projects Showcase! Here, I proudly present a selection of my latest works and accomplishments.</p>
+                    <p class="sm:text-xl md:text-2xl styled-dashboard-mobile-border lg:text-2xl text-white">Welcome to my Projects Showcase! Here, I proudly present a selection of my latest works and accomplishments.</p>
     <div class="flex flex-wrap items-center mt-20 text-left text-center">
         <div class="w-full md:w-3/5 lg:w-1/2 px-4">
-            <img src="Images/Projects/Ricos Pizzeria.jpg" alt="Rico's Pizzeria" class="inline-block rounded shadow-lg border border-merino-400">
+            <img src="Images/Projects/Flavour Dash.jpg" alt="Flavour Dash home screenshot" class="inline-block rounded shadow-lg border border-merino-400">
         </div>
         <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
             <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl text-purple-500">
-                Rico's Pizzeria
+                Flavour Dash
             </h3>
-            <p class="sm:text-lg mt-6 text-white">
-                This static website is built using tailwind and some javascript for the animations hero section and smooth scroll functions.
-            </p>
-            <div class="mt-8 flex justify-center md:justify-start">
-            <a href="https://ndoyaicodes.github.io/Rico-s-Pizzeria/" class="inline-flex items-center px-6 py-3 rounded bg-purple-500 text-white hover:bg-purple-700 transition duration-300 ease-in-out">
-                Live Preview
-            </a>
-            <a href="https://github.com/NdoyaiCodes/Rico-s-Pizzeria" class="inline-flex items-center ml-4 px-6 py-3 rounded bg-purple-500 text-white hover:bg-purple-700 transition duration-300 ease-in-out">
-                GitHub
-            </a>
-        </div>
+            <p class="sm:text-lg mt-6 text-white">Flavour Dash is a template website for a fictional SaaS company offering cutting-edge technology and solutions in the hospitality industry. The design features a minimalist and simple feel with a white background, allowing for easy navigation through different sections. Built using Tailwind CSS for responsiveness across all screen sizes.</p>
+           <div class="mt-8 flex justify-center md:justify-start">
+                <a href="https://ndoyaicodes.github.io/FlavourDash/" class="inline-flex items-center px-4 py-2 rounded bg-purple-500 text-white text-sm hover:bg-purple-700 transition duration-300 ease-in-out">
+                    Live Preview
+                </a>
+                <a href="https://github.com/NdoyaiCodes/FlavourDash" class="inline-flex items-center ml-4 px-4 py-2 rounded bg-purple-500 text-white text-sm hover:bg-purple-700 transition duration-300 ease-in-out">
+                    GitHub
+                </a>
+            </div>
         </div>
     </div>
-
     <div class="flex flex-wrap items-center mt-20 text-left text-center">
         <div class="w-full md:w-3/5 lg:w-1/2 px-4">
-            <img src="https://picsum.photos/400/240" alt="project members" class="inline-block rounded shadow-lg border border-merino-400">
+            <img src="Images/Projects/Ricos Pizzeria.jpg" alt="Rico's Pizeria home screenshot" class="inline-block rounded shadow-lg border border-merino-400">
         </div>
         <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
-            <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl text-purple-500">
-                Easy collaboration
+            <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl text-purple-500">Rico's Pizzeria
             </h3>
-            <p class="sm:text-lg mt-6 text-white">
-                All LocaleData projects are private. Each project can have multiple collaborators
-                with different roles and access permissions. You determine who can see and edit
-                your translations. Just add admins, developers, translators and configure their
-                access rights.
-            </p>
+            <p class="sm:text-lg mt-6 text-white">Rico's Pizzeria is a static website showcasing my approach to building a website for a pizzeria or restaurant. The design features a dark background with accents of red and white, providing a rich user experience. Built using Tailwind CSS and incorporating JavaScript for animations in the hero section and smooth scrolling functions. The website is responsive and optimized for various screen sizes.</p>
             <div class="mt-8 flex justify-center md:justify-start">
-            <a href="#" class="inline-flex items-center px-6 py-3 rounded bg-purple-500 text-white hover:bg-purple-700 transition duration-300 ease-in-out">
+            <a href="https://ndoyaicodes.github.io/Rico-s-Pizzeria/" class="inline-flex items-center px-4 py-2 rounded bg-purple-500 text-white text-sm hover:bg-purple-700 transition duration-300 ease-in-out">
                 Live Preview
             </a>
-            <a href="#" class="inline-flex items-center ml-4 px-6 py-3 rounded bg-purple-500 text-white hover:bg-purple-700 transition duration-300 ease-in-out">
+            <a href="https://github.com/NdoyaiCodes/Rico-s-Pizzeria" class="inline-flex items-center ml-4 px-4 py-2 rounded bg-purple-500 text-white text-sm hover:bg-purple-700 transition duration-300 ease-in-out">
                 GitHub
             </a>
         </div>
         </div>
     </div>
-
     <div class="flex flex-wrap items-center mt-20 text-left  text-center">
         <div class="w-full md:w-3/5 lg:w-1/2 px-4">
-            <img src="https://picsum.photos/400/240" alt="editor" class="inline-block rounded shadow-lg border border-merino-400">
+            <img src="Images/Projects/Sidai Oleng.jpg" alt="Sidai Oleng home screenshot" class="inline-block rounded shadow-lg border border-merino-400">
         </div>
         <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
             <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl text-purple-500">
-                No more syntax errors
+                Sidai Oleng Travel Agency
             </h3>
-            <p class="sm:text-lg mt-6 text-white">
-                LocaleData provides you easy import/export functions for your YAML files.
-                Use a simple editor with many predefined languages to manage your locales.
-                LocaleData also supports multiple translation types, such as simple text, plural forms,
-                numbers, booleans, symbols, arrays, ...
-            </p>
+            <p class="sm:text-lg mt-6 text-white">Sidai Oleng is a mock website project for a travel agency showcasing a responsive design built with Bootstrap, ensuring compatibility with all screen sizes. Explore various sections of a travel agency website, including homepage, destinations, services, and contact. Created using HTML5, CSS3, and Bootstrap 4 for a visually appealing and interactive user experience.</p>
             <div class="mt-8 flex justify-center md:justify-start">
-            <a href="#" class="inline-flex items-center px-6 py-3 rounded bg-purple-500 text-white hover:bg-purple-700 transition duration-300 ease-in-out">
+            <a href="https://ndoyaicodes.github.io/Travel-Agency-Website/" class="inline-flex items-center px-4 py-2 rounded bg-purple-500 text-white text-sm hover:bg-purple-700 transition duration-300 ease-in-out">
                 Live Preview
             </a>
-            <a href="#" class="inline-flex items-center ml-4 px-6 py-3 rounded bg-purple-500 text-white hover:bg-purple-700 transition duration-300 ease-in-out">
+            <a href="https://github.com/NdoyaiCodes/Travel-Agency-Website" class="inline-flex items-center ml-4 px-4 py-2 rounded bg-purple-500 text-white text-sm hover:bg-purple-700 transition duration-300 ease-in-out">
                 GitHub
             </a>
         </div>
@@ -392,9 +373,33 @@
     </div>
 </section>
 <!-- Portfolio section -->
-
+<!--Contact-->
+<section id="contact-section" class="bg-opacity-50 py-20">
+    <div class="container mx-auto px-4">
+        <h2 class="text-white text-4xl mb-4 font-bold">Let's Connect!</h2>
+           <p class="text-gray-300 styled-dashboard-mobile-border mb-8">I'm excited to hear from you. Whether you have a project in mind, want to collaborate, or just want to say hi, feel free to reach out!</p>
+        <div class="flex flex-col md:flex-row md:items-center">
+            <!-- Phone -->
+            <div class="flex items-center mb-4 md:mb-0 mr-8">
+                <i class="fas fa-phone text-white text-xl mr-2"></i>
+                <a href="tel:+1234567890" class="text-white hover:underline">+254 708-320-259</a>
+            </div>
+            <!-- Email -->
+            <div class="flex items-center mb-4 md:mb-0 mr-8">
+                <i class="fas fa-envelope text-white text-xl mr-2"></i>
+                <a href="mailto:info@example.com" class="text-white hover:underline">ndoyaidnumbi@gmail.com</a>
+            </div>
+        </div>
+        <!-- Social Icons -->
+        <div class="flex mt-6 social-icons">
+            <a href="https://www.instagram.com/watermelononsunday/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/originalndumbi" target="_blank" rel="noopener noreferrer" data-aos="fade-up" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/NdoyaiCodes" target="_blank" rel="noopener noreferrer" data-aos="fade-up" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</section>
+<!--Contact-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
-
