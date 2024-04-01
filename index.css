@@ -98,7 +98,7 @@ body {
     margin: .5rem 2rem;
     outline: 2px solid purple;
     border-radius: 15px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: white;
     transition: all 700ms;
@@ -107,6 +107,21 @@ body {
 .container .content nav a:hover {
     background: black;
         color: white;
+}
+
+.container .content .cv-button a {
+    display: flex;
+    align-items: center;
+    font-size: 1.9rem;
+    color: white;
+    transition: all 700ms;
+    text-decoration: none;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.container .content .cv-button a i {
+    margin-right: 15px;
 }
 
 .container .social {
@@ -119,7 +134,7 @@ body {
 
 .container .social a i {
     font-size: 3rem;
-    margin-left: 3rem;
+    margin-left: 6rem;
     align-items: center;
     z-index: 100;
 }
@@ -141,7 +156,7 @@ body {
 }
 
 .container .social a:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 @media only screen and (max-width: 600px) {
@@ -160,19 +175,27 @@ body {
     }
 
     .container .content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
     .container .content h2 {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         margin-bottom: 2rem;
     }
     .container .content nav a {
-        font-size: 1rem;
-        padding: 0.5rem;
+        font-size: 2rem;
+        padding: 1.3rem;
         margin: .8rem;
         justify-content:space-between;
+    }
+
+    .container .content .cv-button {
+        margin-top: 1rem;
+    }
+
+    .container .content .cv-button a {
+        font-size: 2rem;
     }
 
     .container .social {
@@ -182,8 +205,8 @@ body {
         margin-right: 0;
     }
     .container .social a i {
-        font-size: 2rem;
-        margin: 2rem;
+        font-size: 2.9rem;
+        margin: 2.5rem;
         justify-content:space-between;
     }
 }

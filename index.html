@@ -23,6 +23,9 @@
             <a href="about.html#portfolio-section" data-aos="fade-up">Portfolio</a>
             <a href="about.html#contact-section" data-aos="fade-up">Contact</a>
         </nav>
+        <div class="cv-button">
+            <a href="Resume/Eric's Resume.pdf" data-aos="fade-up" download> <i class="fas fa-download mr-2"></i>Download CV</a>
+        </div>
         <div class="social">
             <a href="https://www.instagram.com/watermelononsunday/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" title="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://twitter.com/originalndumbi" target="_blank" rel="noopener noreferrer" data-aos="fade-up" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -31,8 +34,25 @@
     </main>
 </div>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDrNyCn2wviCQR0k6U6sbZB-N6TVKtJ4Zk",
+    authDomain: "ndoyai-ndumbi-portfolio.firebaseapp.com",
+    projectId: "ndoyai-ndumbi-portfolio",
+    storageBucket: "ndoyai-ndumbi-portfolio.appspot.com",
+    messagingSenderId: "598769301632",
+    appId: "1:598769301632:web:cb484f6011249381e58e65",
+    measurementId: "G-HXQRRLGHY6"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  AOS.init({
         once: true,
         delay: 0
     });

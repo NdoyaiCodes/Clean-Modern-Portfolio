@@ -16,7 +16,7 @@
     <br>
     <h3 class="text-sm text-center text-white animate-fade-up">"Without music, life would be a mistake."<br> - Friedrich Nietzsche</h3>
     <div class="spotify-container mt-6 mb-4 animate-fade-up">
-      <iframe src="https://open.spotify.com/embed/playlist/5ebTgsUwdrxIrfp75KtwxI?utm_source=generator&theme=0" frameborder="0" allowfullscreen title="Spotify Playlist"></iframe>
+      <iframe src="https://open.spotify.com/embed/playlist/5ebTgsUwdrxIrfp75KtwxI?utm_source=generator&theme=0" frameborder="0" allowfullscreen allow="encrypted-media" title="Spotify Playlist"></iframe>
     </div>
   </div>
 <!-- About Section -->
@@ -41,7 +41,7 @@
         <li role="presentation">
             <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="Skills" data-tabs-target="#styled-skills" type="button" role="tab" aria-controls="skills" aria-selected="false">Skills</button>
         </li>
-    </ul>
+    </ul>   
 </div>
 <!--Who am i tab content-->
 <div id="default-styled-tab-content">
@@ -186,27 +186,27 @@
     <div class="mb-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <!-- Professional Skill 1 -->
         <div class="Professional icon">
-            <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">Landing Page Design</div>
+            <div class="d-flex align-items-center text-white rounded-4 p-3">Landing Page Design</div>
         </div>
         <!-- Professional Skill 2 -->
         <div class="Professional icon">
-            <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">Email Marketing</div>
+            <div class="d-flex align-items-center text-white rounded-4 p-3">Email Marketing</div>
         </div>
         <!-- Professional Skill 3 -->
         <div class="Professional icon">
-            <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">Web Development</div>
+            <div class="d-flex align-items-center text-white rounded-4 p-3">Web Development</div>
         </div>
         <!-- Professional Skill 4 -->
         <div class="Professional icon">
-            <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">Hubspot Service &amp; Email</div>
+            <div class="d-flex align-items-center text-white rounded-4 p-3">Hubspot Service &amp; Email</div>
         </div>
         <!-- Professional Skill 5 -->
         <div class="Professional icon">
-            <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">No-Code Design</div>
+            <div class="d-flex align-items-center text-white rounded-4 p-3">No-Code Design</div>
         </div>
         <!-- Professional Skill 6 -->
         <div class="Professional icon">
-            <div class="d-flex align-items-center bg-gray-300 rounded-4 p-3">User Interface Design</div>
+            <div class="d-flex align-items-center text-white rounded-4 p-3">User Interface Design</div>
         </div>
             </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -375,8 +375,13 @@
 <!-- Portfolio section -->
 <!--Contact-->
 <section id="contact-section" class="bg-opacity-50 py-20">
+    <div class="cv-button text-center">
+           <a href="Resume/Eric's Resume.pdf" download>
+               <i class="fas fa-download mr-2"></i>Download CV
+           </a>
+    </div>
     <div class="container mx-auto px-4">
-        <h2 class="text-white text-4xl mb-4 font-bold">Let's Connect!</h2>
+        <h2 class="text-white text-4xl mb-4 font-bold">Let's <span class="text-purple-500">Connect!</span></h2>
            <p class="text-gray-300 styled-dashboard-mobile-border mb-8">I'm excited to hear from you. Whether you have a project in mind, want to collaborate, or just want to say hi, feel free to reach out!</p>
         <div class="flex flex-col md:flex-row md:items-center">
             <!-- Phone -->
@@ -401,5 +406,23 @@
 <!--Contact-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDrNyCn2wviCQR0k6U6sbZB-N6TVKtJ4Zk",
+    authDomain: "ndoyai-ndumbi-portfolio.firebaseapp.com",
+    projectId: "ndoyai-ndumbi-portfolio",
+    storageBucket: "ndoyai-ndumbi-portfolio.appspot.com",
+    messagingSenderId: "598769301632",
+    appId: "1:598769301632:web:cb484f6011249381e58e65",
+    measurementId: "G-HXQRRLGHY6"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
