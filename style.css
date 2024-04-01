@@ -214,16 +214,87 @@ p {
     height: auto;
 }
 
-.star-rating {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
+/* styles.css */
+
+.grid {
+    display: grid;
 }
 
-.star {
-    color: #FFD700;
-    font-size: 20px;
-    margin-right: 3px;
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.icon-item {
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #d1d5db;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.progress {
+    height: .5rem;
+    border-radius: 10px;
+}
+
+.html-progress .progress {
+    background-color: #8a2be2;
+    width: 80%;
+}
+
+.css-progress .progress {
+    background-color: #8a2be2;
+    width: 80%;
+}
+
+.bootstrap-progress .progress {
+    background-color: #8a2be2;
+    width: 85%;
+}
+
+.tailwind-progress .progress {
+    background-color: #8a2be2;
+    width: 90%;
+}
+
+.javascript-progress .progress {
+    background-color: #8a2be2;
+    width: 30%;
+}
+
+.github-progress .progress {
+    background-color: #8a2be2;
+    width: 75%;
+}
+
+.hubspot-progress .progress {
+    background-color: #8a2be2;
+    width: 80%;
+}
+
+.slack-progress .progress {
+    background-color: #8a2be2;
+    width: 100%;
+}
+
+.customer-service-progress .progress {
+    background-color: #8a2be2;
+    width: 100%;
 }
 
 .cv-button {
