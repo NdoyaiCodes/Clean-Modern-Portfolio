@@ -77,6 +77,11 @@ body {
     text-align: center;
 }
 
+.purple-text {
+    color: #8A4EFF;
+}
+
+
 .container .content h2 {
     border-bottom: 1px solid purple;
     font-size: 2rem;
